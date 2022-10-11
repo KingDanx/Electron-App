@@ -1,0 +1,24 @@
+{
+  "name": "electron-app",
+  "productName": "Electron Practice",
+  "version": "1.0.0",
+  "description": "Electron skeleton app for practice",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingDanx/Electron-App.git"
+  },
+  "author": "Dan Prudhomme Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingDanx/Electron-App/issues"
+  },
+  "homepage": "https://github.com/KingDanx/Electron-App#readme",
+  "dependencies": {
+    "electron": "^21.1.0"
+  }
+}
