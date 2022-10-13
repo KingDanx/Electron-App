@@ -16,11 +16,13 @@ const mouseDown = (e) => {
   } else if (e.shiftKey) {
     count = count / 2;
     testers.style.background = "green";
+    testers.style.boxShadow = "0px 0px 66px 22px rgba(3, 252, 57, 0.921)";
     testers.style.fontSize = `${count}px`;
   } else if (e.altKey) {
     testers.style.background = "red";
   } else {
     testers.style.background = "blue";
+    testers.style.boxShadow = "0px 0px 66px 22px rgba(17, 0, 255, 0.921)";
   }
   //   testers.style.left = `${xCoordDown}px`;
   //   testers.style.top = `${yCoordDown}px`;
@@ -40,14 +42,15 @@ const elementDrag = (e) => {
 const mouseUp = (e) => {
   e.preventDefault();
   testers.style.background = "mediumpurple";
-  xCoordUp = e.pageX;
-  yCoordUp = e.pageY;
-  console.log(xCoordDown - xCoordUp + " x");
-  console.log(yCoordDown - yCoordUp + " y");
-  console.log(e.target);
+  testers.style.boxShadow = "0px 0px 66px 22px rgba(255,0,255,0.54)";
+  //   xCoordUp = e.pageX;
+  //   yCoordUp = e.pageY;
+  //   console.log(xCoordDown - xCoordUp + " x");
+  //   console.log(yCoordDown - yCoordUp + " y");
+  //   console.log(e.target);
 
-  testers.style.left = `${xCoordUp - width / 2}px`;
-  testers.style.top = `${yCoordUp - height / 2}px`;
+  //   testers.style.left = `${xCoordUp - width / 2}px`;
+  //   testers.style.top = `${yCoordUp - height / 2}px`;
 
   document.onmousemove = null;
 };
